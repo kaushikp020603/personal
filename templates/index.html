@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wo Dost Jo Meri Duniya Thi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #1b1b1b, #3a3a3a);
+      color: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      color: #e8c547;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+    a.start-button {
+      background-color: #e8c547;
+      color: #1b1b1b;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+      box-shadow: 0 0 15px rgba(232, 197, 71, 0.6);
+      transition: all 0.3s ease;
+    }
+    a.start-button:hover {
+      background-color: #f3da78;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wo Dost Jo Meri Duniya Thi</h1>
+  <p>A journey through us. One memory at a time 💛</p>
+  <a href="{{ url_for('question', qid=0) }}" class="start-button">Begin the Hunt</a>
+</body>
+</html>
